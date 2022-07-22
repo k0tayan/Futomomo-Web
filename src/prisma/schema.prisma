@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native","linux-arm64-openssl-1.1.x"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model futomomo {
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
+  text String
+  image_url String
+  url String
+  twitter_id String
+  name String?
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+}

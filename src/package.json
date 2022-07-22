@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --fix --ext .vue,.ts",
+    "format-check": "npx prettier --check ./",
+    "format-write": "npx prettier --write ./"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.0.96",
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "nuxt": "3.0.0-rc.6",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1",
+    "prettier-eslint-cli": "^6.0.1",
+    "prisma": "^4.1.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.1.0",
+    "sass": "^1.53.0",
+    "vuetify": "^3.0.0-beta.5"
+  },
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
